@@ -340,33 +340,45 @@
 		<div class="col-2">
 
   			<div class="aside">
-          <md-toolbar color="accent">
+          <!--<md-toolbar color="accent"> -->
       <md-tab-group >
-              <md-tab label="Tab 1">Content 1</md-tab>
-              <md-tab label="Tab 2">Content 2</md-tab>
+              <md-tab label="List-1">
+                
+<!--<div style="overflow-x:auto;"> -->
+  <table>
+        <tr>
+      <td>Carrot</td>
+      <td>1 Q</td>
+      <td>96.00</td>
+      
+    </tr>
+    <tr>
+      <td>Yam</td>
+      <td>1 Q</td>
+      <td>890.00</td>
+      
+    </tr>
+    <tr>
+      <td>Ring Beans</td>
+      <td>1.00 K</td>
+      <td>82.00</td>
+      
+    </tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><th>Total</th><th>3</th><th>1068 Rs</th></tr>
+
+                  </table>
+                    <!--</div> -->
+              </md-tab>
+              <md-tab label="List-2">Empety list...</md-tab>
+
+              <md-tab label="List-3">Empety list...</md-tab>
             </md-tab-group>
-            <button md-icon-button [mdMenuTriggerFor]="menu" >
-  <md-icon>more_vert</md-icon>
-</button>
-<md-menu #menu="mdMenu">
-  <button md-menu-item>
-    <md-icon>add</md-icon>
-    <span>Add New</span>
-  </button>
-  <button md-menu-item >
-    <md-icon>edit</md-icon>
-    <span>Edit</span>
-  </button>
-  <button md-menu-item>
-    <md-icon>remove</md-icon>
-    <span>Remove</span>
-  </button>
-  <button md-menu-item>
-    <md-icon>group</md-icon>
-    <span>Organize</span>
-  </button>
-</md-menu>
-    </md-toolbar> 
+            
+    <!--</md-toolbar> -->
 
 
     		<!--	<div class="tab-menu-group">
@@ -402,13 +414,40 @@
 
   				<!--Bottom buttons -->
 				<div class="btn-group">
-  					<button md-button >Button1</button>
-  					<button md-button>Button2</button>
+  					<button md-button class="bottom-btn">DISCOUNT</button>
+  					<button md-button class="bottom-btn">CLEAR</button>
+            <button md-button class="bottom-btn">PRINT</button>
+            <button md-button class="bottom-btn">CARD PAY</button>
   				</div><!-- End of button group -->
 
   			</div><!-- End of aside -->
 
 		</div><!-- End of col-2 -->
+    <div class="col-3">
+      <button md-icon-button [mdMenuTriggerFor]="menu" >
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>
+    <md-icon>add</md-icon>
+    <span>Add New</span>
+  </button>
+  <button md-menu-item >
+    <md-icon>edit</md-icon>
+    <span>Edit</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>remove</md-icon>
+    <span>Remove</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>group</md-icon>
+    <span>Organize</span>
+  </button>
+</md-menu>
+
+    </div>
+
 
 	</div><!-- End of class-row -->
 
