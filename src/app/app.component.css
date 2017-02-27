@@ -9,6 +9,9 @@
    margin-top: 15px;
    text-align: center;
 }
+img {
+    border-radius: 50%;
+}
 .mcard {
    width: 200px;
    display: inline-block;
@@ -16,6 +19,10 @@
    margin-top: 15px;
    text-align: center;
 }
+md-sidenav {
+  width: 400px;
+}
+
 .row::after {
     content: "";
     clear: both;
