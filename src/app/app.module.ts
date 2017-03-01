@@ -8,11 +8,17 @@ import { AppComponent } from './app.component';
 import { BillDetailComponent } from './bill-detail/bill-detail.component';
 
 import {WegService} from './services/weg.service';
+//import { WegComponent } from './weg/weg.component';
+import { HelpComponent } from './help/help.component';
+import { SideNavDetailComponent } from './side-nav-detail/side-nav-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BillDetailComponent
+    BillDetailComponent,
+    //WegComponent,
+    HelpComponent,
+    SideNavDetailComponent
   ],
   imports: [
     BrowserModule,
