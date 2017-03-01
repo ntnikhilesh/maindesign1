@@ -1,0 +1,256 @@
+<md-sidenav-container fullscreen>
+    <md-sidenav #start>
+        <md-nav-list>
+            <a md-list-item >
+              <img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/512/photo512x512.png" alt="Name" width="100" height="100">
+              
+
+              
+            </a>
+            <a md-list-item >
+              <br><br>
+              
+            </a>
+
+
+          <a md-list-item >
+            <br><br>
+              <H5>Rajeev Harikar</H5><br>
+              
+          </a>
+
+          <hr>
+          <a md-list-item >
+          <md-icon md-list-icon >edit</md-icon>
+              <h3 md-line align="right"> Billing</h3>
+    
+              
+            </a>
+
+            <a md-list-item >
+          <md-icon md-list-icon>note</md-icon>
+              <h3 md-line align="right"> Inventory</h3>
+    
+              
+            </a>
+
+            <a md-list-item >
+          <md-icon md-list-icon>report</md-icon>
+              <h3 md-line align="right"> Report</h3>
+    
+              
+            </a>
+
+            <a md-list-item >
+          <md-icon md-list-icon>settings</md-icon>
+              <h3 md-line align="right"> Setting</h3>
+    
+              
+            </a>
+            <a md-list-item >
+          <md-icon md-list-icon>call</md-icon>
+              <h3 md-line align="right"> Support</h3>
+    
+              
+            </a>
+
+            <a md-list-item >
+          <md-icon md-list-icon>help</md-icon>
+              <h3 md-line align="right"> Help</h3>
+    
+              
+            </a>
+            
+            
+        </md-nav-list>
+        <hr>
+        <button md-button (click)="start.close()" >CLOSE</button>
+    </md-sidenav>
+   	<md-toolbar color="">
+   	 	<button md-icon-button (click)="start.open()">
+        <md-icon>menu</md-icon>
+       	</button>Billing
+   	</md-toolbar> 
+
+
+   	<!--<div class="tab-content"> -->
+
+
+	<div class="row">
+
+		<div class="col-1">
+			<md-tab-group>
+  				<md-tab label="VEGETABLES" >
+         
+					<md-card class="mcard" *ngFor="let wegi of weg">
+           
+            <img md-card-avatar src={{wegi.img}} alt={{wegi.name}} width="60%">
+            <md-chip-list>
+  
+                <md-chip color="accent" selected=""> {{wegi.name}} 
+                </md-chip>
+            </md-chip-list>
+          </md-card>
+         
+          
+				</md-tab> <!-- End of first tab -->
+
+				<md-tab label="FRUITS">
+    				    <md-card class="mcard" *ngFor="let wegi of weg">
+           
+            <img md-card-avatar src={{wegi.img}} alt={{wegi.name}} width="60%">
+            <md-chip-list>
+  
+                <md-chip color="accent" selected=""> {{wegi.name}} 
+                </md-chip>
+            </md-chip-list>
+          </md-card>
+  				</md-tab>
+
+  				<md-tab label="OTHERS">
+    				    <md-card class="mcard" *ngFor="let wegi of weg">
+           
+            <img md-card-avatar src={{wegi.img}} alt={{wegi.name}} width="60%">
+            <md-chip-list>
+  
+                <md-chip color="accent" selected=""> {{wegi.name}} 
+                </md-chip>
+            </md-chip-list>
+          </md-card>
+  				</md-tab>
+          <md-tab label="New Tab-1">Loading...</md-tab>
+
+              <md-tab label="New Tab-2">Loading...</md-tab>
+              <md-tab label="New Tab-3">Loading...</md-tab>
+
+              <md-tab label="New Tab-4">Loading...</md-tab>
+              <md-tab label="New Tab-5">Loading...</md-tab>
+
+              <md-tab label="New Tab-6">Loadig...</md-tab>
+  				
+  			</md-tab-group> <!-- End of Tab content -->
+
+		</div><!-- End of col-1-->
+
+		<div class="col-2">
+
+  			<div class="aside">
+          <!--<md-toolbar color="accent"> -->
+      <md-tab-group >
+              <md-tab label="List-1">
+                
+<!--<div style="overflow-x:auto;"> -->
+                  <table>
+                      <tr>
+                        <td>Carrot</td>
+                        <td>1 Q</td>
+                        <td>96.00</td>
+      
+                      </tr>
+                      <tr>
+                        <td>Yam</td>
+                        <td>1 Q</td>
+                        <td>890.00</td>
+      
+                      </tr>
+                      <tr>
+                        <td>Ring Beans</td>
+                        <td>1.00 K</td>
+                        <td>82.00</td>
+      
+                      </tr>
+                      <tr><td></td><td></td><td></td></tr>
+                      <tr><td></td><td></td><td></td></tr>
+                      <tr><td></td><td></td><td></td></tr>
+                      <tr><td></td><td></td><td></td></tr>
+                      <tr><th>Total</th><th>3</th><th>1068 Rs</th></tr>
+
+                    </table>
+                    <!--</div> -->
+              </md-tab> <!-- End of List-1 -->
+              <md-tab label="List-2">Empety list...</md-tab>
+
+              <md-tab label="List-3">Empety list...</md-tab>
+            </md-tab-group>
+            
+    <!--</md-toolbar> -->
+
+
+    		<!--	<div class="tab-menu-group">
+  					<md-tab-group >
+              <md-tab label="Tab 1">Content 1</md-tab>
+              <md-tab label="Tab 2">Content 2</md-tab>
+            </md-tab-group>
+
+            <button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>
+    <md-icon>dialpad</md-icon>
+    <span>Redial</span>
+  </button>
+  <button md-menu-item disabled>
+    <md-icon>voicemail</md-icon>
+    <span>Check voicemail</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>notifications_off</md-icon>
+    <span>Disable alerts</span>
+  </button>
+</md-menu>
+            </div> -->
+
+            
+				
+         		
+         		
+  				<hr>
+
+  				<!--Bottom buttons -->
+				<div class="btn-group">
+  					<button md-button class="bottom-btn">DISCOUNT</button>
+  					<button md-button class="bottom-btn">CLEAR</button>
+            <button md-button class="bottom-btn">PRINT</button>
+            <button md-button class="bottom-btn">CARD PAY</button>
+  				</div><!-- End of button group -->
+
+  			</div><!-- End of aside -->
+
+		</div><!-- End of col-2 -->
+    <div class="col-3">
+      <button md-icon-button [mdMenuTriggerFor]="menu" >
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>
+    <md-icon>add</md-icon>
+    <span>Add New</span>
+  </button>
+  <button md-menu-item >
+    <md-icon>edit</md-icon>
+    <span>Edit</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>remove</md-icon>
+    <span>Remove</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>group</md-icon>
+    <span>Organize</span>
+  </button>
+</md-menu>
+
+    </div> <!-- End of column 3 -->
+
+
+	</div><!-- End of class-row -->
+
+
+
+	<div class="footer">
+  		<p>Resize the browser window to see how the content respond to the resizing.</p>
+	</div>
+
+      		
+</md-sidenav-container>
