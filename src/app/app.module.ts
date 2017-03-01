@@ -7,6 +7,8 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { WegDetailComponent } from './weg-detail/weg-detail.component';
 
+import {WegService} from './services/weg.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,7 @@ import { WegDetailComponent } from './weg-detail/weg-detail.component';
     HttpModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [WegService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
