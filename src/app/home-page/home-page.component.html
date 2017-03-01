@@ -71,30 +71,10 @@
         <app-bill-detail></app-bill-detail>
 
 		</div><!-- End of col-2 -->
-    <div class="col-3">
-      <button md-icon-button [mdMenuTriggerFor]="menu">
-  <md-icon>more_vert</md-icon>
-</button>
-<md-menu #menu="mdMenu">
-  <button md-menu-item>
-    <md-icon>add</md-icon>
-    <span>Add New</span>
-  </button>
-  <button md-menu-item >
-    <md-icon>edit</md-icon>
-    <span>Edit</span>
-  </button>
-  <button md-menu-item>
-    <md-icon>remove</md-icon>
-    <span>Remove</span>
-  </button>
-  <button md-menu-item>
-    <md-icon>group</md-icon>
-    <span>Organize</span>
-  </button>
-</md-menu>
 
-    </div> <!-- End of column 3 -->
+    	<div class="col-3">
+      		<app-menu-detail></app-menu-detail>
+      	</div> <!-- End of column 3 -->
 
 
 	</div><!-- End of class-row -->

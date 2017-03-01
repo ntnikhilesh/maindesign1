@@ -16,6 +16,7 @@ import { MainTabDetailComponent } from './main-tab-detail/main-tab-detail.compon
 import {RoutingModule} from './routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SideNavDetailComponent,
     MainTabDetailComponent,
     HomePageComponent,
-    DashboardComponent
+    DashboardComponent,
+    MenuDetailComponent
   ],
   imports: [
     BrowserModule,
