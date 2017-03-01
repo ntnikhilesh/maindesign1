@@ -64,6 +64,16 @@
         </md-nav-list>
         <hr>
         <button md-button (click)="start.close()" >CLOSE</button>
+        <!-- Roting area -->
+		<hr>
+		<nav>
+			<a routerLink="/help" routerLinkActive="active">Help me!</a>
+			<a routerLink="/mainTab" routerLinkActive="active">Main-Tab</a>
+
+		</nav>
+		<router-outlet></router-outlet>
+		<!-- End of Routing area -->
+
     </md-sidenav>
 
     <md-toolbar color="">

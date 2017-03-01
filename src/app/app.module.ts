@@ -11,6 +11,9 @@ import {WegService} from './services/weg.service';
 //import { WegComponent } from './weg/weg.component';
 import { HelpComponent } from './help/help.component';
 import { SideNavDetailComponent } from './side-nav-detail/side-nav-detail.component';
+import { MainTabDetailComponent } from './main-tab-detail/main-tab-detail.component';
+
+import {RoutingModule} from './routing.module';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,15 @@ import { SideNavDetailComponent } from './side-nav-detail/side-nav-detail.compon
     BillDetailComponent,
     //WegComponent,
     HelpComponent,
-    SideNavDetailComponent
+    SideNavDetailComponent,
+    MainTabDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    RoutingModule
   ],
   providers: [WegService],
   bootstrap: [AppComponent]
