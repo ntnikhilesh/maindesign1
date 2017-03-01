@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {Router} from '@angular/router';
+
 @Component({
   selector: 'app-main-tab-detail',
   templateUrl: './main-tab-detail.component.html',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainTabDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+
+  goToDetail()
+  {
+  	this.router.navigate(['/help']);
   }
 
 }

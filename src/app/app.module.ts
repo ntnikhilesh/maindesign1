@@ -14,6 +14,8 @@ import { SideNavDetailComponent } from './side-nav-detail/side-nav-detail.compon
 import { MainTabDetailComponent } from './main-tab-detail/main-tab-detail.component';
 
 import {RoutingModule} from './routing.module';
+import { HomePageComponent } from './home-page/home-page.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {RoutingModule} from './routing.module';
     //WegComponent,
     HelpComponent,
     SideNavDetailComponent,
-    MainTabDetailComponent
+    MainTabDetailComponent,
+    HomePageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

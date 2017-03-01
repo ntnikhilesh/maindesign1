@@ -21,57 +21,59 @@
           <hr>
           <a md-list-item >
           <md-icon md-list-icon >edit</md-icon>
-              <h3 md-line align="right"> Billing</h3>
+              <h3 md-line align="left"> Billing</h3>
     
               
             </a>
 
             <a md-list-item >
           <md-icon md-list-icon>note</md-icon>
-              <h3 md-line align="right"> Inventory</h3>
+              <h3 md-line align="left"> Inventory</h3>
     
               
             </a>
 
             <a md-list-item >
           <md-icon md-list-icon>report</md-icon>
-              <h3 md-line align="right"> Report</h3>
+              <h3 md-line align="left"> Report</h3>
     
               
             </a>
 
             <a md-list-item >
           <md-icon md-list-icon>settings</md-icon>
-              <h3 md-line align="right"> Setting</h3>
+              <h3 md-line align="left"> Setting</h3>
     
               
             </a>
             <a md-list-item >
           <md-icon md-list-icon>call</md-icon>
-              <h3 md-line align="right"> Support</h3>
+              <h3 md-line align="left"> Support</h3>
     
               
             </a>
 
             <a md-list-item >
           <md-icon md-list-icon>help</md-icon>
-              <h3 md-line align="right"> Help</h3>
+              <!--<h3 md-line align="left"> Help</h3> -->
+              <h3 md-line align="left"><a routerLink="/help" routerLinkActive="active">Help..</a></h3><br>
     
               
             </a>
             
             
         </md-nav-list>
+
         <hr>
-        <button md-button (click)="start.close()" >CLOSE</button>
-        <!-- Roting area -->
+        <button md-button (click)="start.close()" >CLOSE..</button>
+        <!-- Roting area --> <!--
 		<hr>
 		<nav>
-			<a routerLink="/help" routerLinkActive="active">Help me!</a>
+			<a routerLink="/help" routerLinkActive="active">Help me!</a><br>
 			<a routerLink="/mainTab" routerLinkActive="active">Main-Tab</a>
 
 		</nav>
-		<router-outlet></router-outlet>
+		<router-outlet></router-outlet> -->
 		<!-- End of Routing area -->
 
     </md-sidenav>
@@ -82,3 +84,4 @@
         <md-icon>menu</md-icon>
        	</button>Billing
    	</md-toolbar> 
+  

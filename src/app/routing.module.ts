@@ -5,12 +5,17 @@
  import {HelpComponent} from './help/help.component';
 
  import {MainTabDetailComponent} from './main-tab-detail/main-tab-detail.component';
+ import {HomePageComponent} from './home-page/home-page.component';
+ import {DashboardComponent} from './dashboard/dashboard.component';
 
 const routes:Routes=[
 
-{path:'',redirectTo:'/help',pathMatch:'full'},
+{path:'',redirectTo:'/dashboard',pathMatch:'full'},
+{path:'dashboard',component:HomePageComponent},
 {path:'help',component:HelpComponent},
 {path:'mainTab',component:MainTabDetailComponent},
+{path:'home-page',component:HomePageComponent},
+
 	
 
 ];
