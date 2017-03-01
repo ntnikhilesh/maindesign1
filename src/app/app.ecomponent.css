@@ -71,7 +71,14 @@ md-toolbar{
 [class*="col-"] {
     width: 100%;
 }
-
+@media only screen and (min-width: 400px) {
+    /* For desktop: */
+    
+    .col-1 {width: 100%;}
+    .col-2 {width: 90%;} 
+    .col-3 {width: 10%;} 
+    
+}
 @media only screen and (min-width: 1040px) {
     /* For desktop: */
     
