@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { AppComponent } from './app.component';
+import { WegDetailComponent } from './weg-detail/weg-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WegDetailComponent
   ],
   imports: [
     BrowserModule,
