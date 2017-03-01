@@ -1,2 +1,50 @@
-Will switch main tab details here...
-<button (click)="goToDetail()">View Detail</button>
+<md-tab-group>
+  				<md-tab label="VEGETABLES" >
+         
+					<md-card class="mcard" *ngFor="let wegi of weg">
+           
+            <img md-card-avatar src={{wegi.img}} alt={{wegi.name}} width="60%">
+            <md-chip-list>
+  
+                <md-chip color="accent" selected=""> {{wegi.name}} 
+                </md-chip>
+            </md-chip-list>
+          </md-card>
+         
+          
+				</md-tab> <!-- End of first tab -->
+
+				<md-tab label="FRUITS">
+    				    <md-card class="mcard" *ngFor="let wegi of weg">
+           
+            <img md-card-avatar src={{wegi.img}} alt={{wegi.name}} width="60%">
+            <md-chip-list>
+  
+                <md-chip color="accent" selected=""> {{wegi.name}} 
+                </md-chip>
+            </md-chip-list>
+          </md-card>
+  				</md-tab>
+
+  				<md-tab label="OTHERS">
+    				    <md-card class="mcard" *ngFor="let wegi of weg">
+           
+            <img md-card-avatar src={{wegi.img}} alt={{wegi.name}} width="60%">
+            <md-chip-list>
+  
+                <md-chip color="accent" selected=""> {{wegi.name}} 
+                </md-chip>
+            </md-chip-list>
+          </md-card>
+  				</md-tab>
+          <md-tab label="New Tab-1">Loading...</md-tab>
+
+              <md-tab label="New Tab-2">Loading...</md-tab>
+              <md-tab label="New Tab-3">Loading...</md-tab>
+
+              <md-tab label="New Tab-4">Loading...</md-tab>
+              <md-tab label="New Tab-5">Loading...</md-tab>
+
+              <md-tab label="New Tab-6">Loadig...</md-tab>
+  				
+  			</md-tab-group> <!-- End of Tab content -->
