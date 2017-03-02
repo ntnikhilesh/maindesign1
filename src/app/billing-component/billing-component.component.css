@@ -97,6 +97,12 @@ md-toolbar{
   padding-left: 30px;
   
 }
+.toolbar-full-screen{
+  padding-left: 1000px;
+}
+.toolbar-search{
+  padding-left: 20px;
+}
 
 .aside {
     background-color: ;
@@ -123,9 +129,16 @@ md-toolbar{
     .col-1 {width: 100%;}
     .col-2 {width: 90%;} 
     .col-3 {width: 10%;} 
+  }
+@media only screen and (min-width: 600px) {
+    /* For desktop: */
+    
+    .col-1 {width: 60%;}
+    .col-2 {width: 35%;} 
+    .col-3 {width: 5%;} 
     
 }
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 768px) {
     /* For desktop: */
     
     .col-1 {width: 60%;}
