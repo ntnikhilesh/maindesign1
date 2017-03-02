@@ -15,14 +15,15 @@
    					<tr>
     					<td>
     						<md-input-container class="example-full-width">
-      							<input mdInput placeholder="Phone Number">
+      							<input type="number" mdInput #postalCode maxlength="10" placeholder="Phone Number" value="8008989008">
+      							<md-hint align="end">{{postalCode.value.length}} / 10</md-hint>
     						</md-input-container>
     					</td>
     				</tr>
     				<tr>
     					<td>
     						<md-input-container class="example-full-width">
-      							<input mdInput placeholder="Enter Pin">
+      							<input type="password" mdInput placeholder="Enter Pin">
     						</md-input-container>
     					</td>
     				</tr>
@@ -37,6 +38,17 @@
   			
 
    		</div> <!-- End of login form -->
+
+   		<div class="login-footer">
+   			<div class="login-footer-text">
+   				Trouble Loging in? Call our customer care for support.
+   			</div>
+   			<div class="login-footer-number">
+   				+91 800 898 9008
+   			</div>
+   			
+
+   		</div>
 
    </div><!-- End of login page -->
 
