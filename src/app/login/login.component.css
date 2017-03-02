@@ -115,3 +115,12 @@ tr:nth-child(even){background-color: #f2f2f2}
   padding-left:600px;
   padding-top: 94px;
 }
+
+.example-form {
+  width: 1000px;
+  padding-left: 350px;
+}
+
+.example-full-width {
+  width: 100%;
+}
