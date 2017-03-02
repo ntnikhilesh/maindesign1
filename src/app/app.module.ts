@@ -10,7 +10,7 @@ import { BillDetailComponent } from './bill-detail/bill-detail.component';
 import {WegService} from './services/weg.service';
 //import { WegComponent } from './weg/weg.component';
 import { HelpComponent } from './help/help.component';
-import { SideNavDetailComponent } from './side-nav-detail/side-nav-detail.component';
+
 import { MainTabDetailComponent } from './main-tab-detail/main-tab-detail.component';
 
 import {RoutingModule} from './routing.module';
@@ -30,7 +30,7 @@ import { SupportComponent } from './support/support.component';
     BillDetailComponent,
     //WegComponent,
     HelpComponent,
-    SideNavDetailComponent,
+    
     MainTabDetailComponent,
     HomePageComponent,
     DashboardComponent,
