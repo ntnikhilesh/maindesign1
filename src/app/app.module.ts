@@ -19,6 +19,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 import { BillingComponentComponent } from './billing-component/billing-component.component';
 import { LoginComponent } from './login/login.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import { ReportComponent } from './report/report.component';
+import { SettingComponent } from './setting/setting.component';
+import { SupportComponent } from './support/support.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     MenuDetailComponent,
     BillingComponentComponent,
-    LoginComponent
+    LoginComponent,
+    InventoryComponent,
+    ReportComponent,
+    SettingComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,

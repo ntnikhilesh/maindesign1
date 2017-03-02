@@ -12,8 +12,8 @@
 
 const routes:Routes=[
 
-{path:'',redirectTo:'/dashboard',pathMatch:'full'},
-{path:'dashboard',component:LoginComponent},
+{path:'',redirectTo:'/login',pathMatch:'full'},
+{path:'login',component:LoginComponent},
 {path:'help',component:HelpComponent},
 {path:'mainTab',component:MainTabDetailComponent},
 {path:'home-page',component:HomePageComponent},
