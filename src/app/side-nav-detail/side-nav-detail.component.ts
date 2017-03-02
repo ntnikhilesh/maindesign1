@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav-detail.component.css']
 })
 export class SideNavDetailComponent implements OnInit {
+title='Billing';
 
   constructor() { }
 

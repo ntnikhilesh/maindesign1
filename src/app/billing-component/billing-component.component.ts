@@ -9,6 +9,7 @@ import {WegService} from './../services/weg.service';
   styleUrls: ['./billing-component.component.css']
 })
 export class BillingComponentComponent implements OnInit {
+title='Billing';
 weg:Weg[];
 
   constructor(private wegService:WegService) { }
