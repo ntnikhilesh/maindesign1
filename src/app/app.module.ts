@@ -17,6 +17,8 @@ import {RoutingModule} from './routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
+import { BillingComponentComponent } from './billing-component/billing-component.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { MenuDetailComponent } from './menu-detail/menu-detail.component';
     MainTabDetailComponent,
     HomePageComponent,
     DashboardComponent,
-    MenuDetailComponent
+    MenuDetailComponent,
+    BillingComponentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
