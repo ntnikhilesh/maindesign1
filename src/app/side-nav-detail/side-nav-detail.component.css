@@ -12,6 +12,40 @@
 img {
     border-radius: 50%;
 }
+.side-top{
+  background-color:#52BE80;
+  color:#ffffff;
+
+}
+.side-prof-img{
+  width: 14px;
+  padding-left: 24px;
+
+}
+.side-name{
+font-family:"Roboto Medium";
+font-size:14px;
+padding-left: 24px;
+padding-top: 14px;
+}
+.side-email{
+font-family:"Roboto Regular";
+font-size:14px;
+padding-left: 24px;
+padding-bottom: 8px;
+}
+.side-botton{
+padding-top: 8px;
+color: #000000;
+font-family: "Roboto Medium";
+font-size:14px;
+}
+.side-billing{
+  padding-top: 16px;
+  padding-left: 24px;
+
+}
+
 .mcard {
    width: 160px;
    display: inline-block;
@@ -49,7 +83,19 @@ md-sidenav {
     padding: 15px;
 }
 md-toolbar{
-  background-color:#F39C12;
+  height: 64px;
+  background-color:#52BE80;
+  color: #ffffff;
+  font-family: "Roboto Medium";
+  font-size: 20px;
+  text-align: center;
+}
+.toolbar-icon{
+
+}
+.toolbar-heading{
+  padding-left: 30px;
+  
 }
 
 .aside {
