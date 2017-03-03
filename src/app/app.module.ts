@@ -23,6 +23,8 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { ReportComponent } from './report/report.component';
 import { SettingComponent } from './setting/setting.component';
 import { SupportComponent } from './support/support.component';
+import { InventoryListComponent } from './inventory-list/inventory-list.component';
+import { ExpandableListModule } from 'angular2-expandable-list';
 
 @NgModule({
   declarations: [
@@ -40,14 +42,16 @@ import { SupportComponent } from './support/support.component';
     InventoryComponent,
     ReportComponent,
     SettingComponent,
-    SupportComponent
+    SupportComponent,
+    InventoryListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule,
-    RoutingModule
+    RoutingModule,
+    ExpandableListModule
   ],
   providers: [WegService],
   bootstrap: [AppComponent]
