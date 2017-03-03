@@ -1,6 +1,13 @@
-<md-sidenav-container fullscreen>
+<div class="row">
 
-   <!--<app-side-nav-detail></app-side-nav-detail> -->
+<div class="col-3  menu">
+ 
+</div>
+
+<div class="col-6 col-m-12">
+    <md-sidenav-container fullscreen>
+
+   
     <md-sidenav #start>
         <md-nav-list>
           <div class="side-top">
@@ -52,7 +59,7 @@
             
         </md-nav-list>
 
-       
+        
      
 
     </md-sidenav>
@@ -60,7 +67,7 @@
     <md-toolbar >
       
     <div class="toolbar-icon">
-   	 	<button md-icon-button (click)="start.open()" >
+      <button md-icon-button (click)="start.open()" >
           <md-icon  ><img src="http://i.imgur.com/BpuLTLm.png" height="30px" color="#0f9d58">
           </md-icon>
        </button>
@@ -70,20 +77,42 @@
       {{title}}
     </div>
 
+    <!--<div class="toolbar-ricons" align="right"> -->
+    <div class="toolbar-ricons" align="right">
+      <img src="http://i.imgur.com/JCYwBrZ.jpg" height="30px" color="#0f9d58">
+      <img src="http://i.imgur.com/lc4NTqJ.jpg" height="30px" color="#0f9d58">
+    </div>
 
-   	</md-toolbar> 
-  
+    
+
+    <!--</div>-->
 
 
-
-
-   <div class="login-page">
-   		<div class="login-logo">
-   			<img src="http://i.imgur.com/wBy57Le.jpg" width="100px" >
-   		</div>
-   		<h1>Welcome to the Report Page...</h1>
-
-   </div>
-
-      		
+    </md-toolbar> 
+          
 </md-sidenav-container>
+
+          
+
+</div>
+
+<div class="col-3">
+
+</div>
+
+</div> <!-- End of action bar row -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
