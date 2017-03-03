@@ -25,6 +25,8 @@ import { SettingComponent } from './setting/setting.component';
 import { SupportComponent } from './support/support.component';
 import { InventoryListComponent } from './inventory-list/inventory-list.component';
 import { ExpandableListModule } from 'angular2-expandable-list';
+import { CreateProductComponent } from './create-product/create-product.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ExpandableListModule } from 'angular2-expandable-list';
     ReportComponent,
     SettingComponent,
     SupportComponent,
-    InventoryListComponent
+    InventoryListComponent,
+    CreateProductComponent,
+    EditProductComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +58,7 @@ import { ExpandableListModule } from 'angular2-expandable-list';
     ExpandableListModule
   ],
   providers: [WegService],
+  entryComponents: [CreateProductComponent,EditProductComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

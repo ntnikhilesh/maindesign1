@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MdDialog} from '@angular/material';
+import {CreateProductComponent} from './../create-product/create-product.component';
 
 @Component({
   selector: 'app-setting',
@@ -8,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class SettingComponent implements OnInit {
 title='Settings';
 
-  constructor() { }
+   constructor(public dialog: MdDialog) {}
+
+  openDialog() {
+    this.dialog.open(CreateProductComponent);
+  }
 
   ngOnInit() {
   }
