@@ -30,6 +30,8 @@ import { EditProductComponent } from './edit-product/edit-product.component';
 import { OrganiseCategoryComponent } from './organise-category/organise-category.component';
 import { BillingMenuComponent } from './billing-menu/billing-menu.component';
 import { InventoryMenuComponent } from './inventory-menu/inventory-menu.component';
+import { ReportTableComponent } from './report-table/report-table.component';
+import { ReportDetailTableComponent } from './report-detail-table/report-detail-table.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { InventoryMenuComponent } from './inventory-menu/inventory-menu.componen
     EditProductComponent,
     OrganiseCategoryComponent,
     BillingMenuComponent,
-    InventoryMenuComponent
+    InventoryMenuComponent,
+    ReportTableComponent,
+    ReportDetailTableComponent
   ],
   imports: [
     BrowserModule,
