@@ -1,5 +1,5 @@
 img{
-	border-radius: 50%;
+	width: 65px;
 }
 md-raised-button{
 
@@ -11,4 +11,12 @@ md-raised-button{
 }
 td{
 	width: 100%;
+}
+
+.example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }
