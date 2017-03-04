@@ -27,6 +27,9 @@ import { InventoryListComponent } from './inventory-list/inventory-list.componen
 import { ExpandableListModule } from 'angular2-expandable-list';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
+import { OrganiseCategoryComponent } from './organise-category/organise-category.component';
+import { BillingMenuComponent } from './billing-menu/billing-menu.component';
+import { InventoryMenuComponent } from './inventory-menu/inventory-menu.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     SupportComponent,
     InventoryListComponent,
     CreateProductComponent,
-    EditProductComponent
+    EditProductComponent,
+    OrganiseCategoryComponent,
+    BillingMenuComponent,
+    InventoryMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +64,7 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     ExpandableListModule
   ],
   providers: [WegService],
-  entryComponents: [CreateProductComponent,EditProductComponent],
+  entryComponents: [CreateProductComponent,EditProductComponent,OrganiseCategoryComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
