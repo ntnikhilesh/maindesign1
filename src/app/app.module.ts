@@ -34,6 +34,8 @@ import { ReportTableComponent } from './report-table/report-table.component';
 import { ReportDetailTableComponent } from './report-detail-table/report-detail-table.component';
 import { StoreInfoComponent } from './store-info/store-info.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { DeviceStatusComponent } from './device-status/device-status.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
     ReportTableComponent,
     ReportDetailTableComponent,
     StoreInfoComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    DeviceStatusComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

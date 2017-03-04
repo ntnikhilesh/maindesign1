@@ -44,8 +44,8 @@
             <tr>
             	<td>
             		<md-checkbox>Sales SMS every </md-checkbox>
-            		<md-select placeholder="duration">
-  					<md-option *ngFor="let du of states" [value]="du.value">
+            		<md-select placeholder="Duration">
+  					<md-option *ngFor="let du of duration" [value]="du.value">
     					{{ du.viewValue }}
   					</md-option>
 				</md-select>
