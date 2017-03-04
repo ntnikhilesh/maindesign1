@@ -32,6 +32,8 @@ import { BillingMenuComponent } from './billing-menu/billing-menu.component';
 import { InventoryMenuComponent } from './inventory-menu/inventory-menu.component';
 import { ReportTableComponent } from './report-table/report-table.component';
 import { ReportDetailTableComponent } from './report-detail-table/report-detail-table.component';
+import { StoreInfoComponent } from './store-info/store-info.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { ReportDetailTableComponent } from './report-detail-table/report-detail-
     BillingMenuComponent,
     InventoryMenuComponent,
     ReportTableComponent,
-    ReportDetailTableComponent
+    ReportDetailTableComponent,
+    StoreInfoComponent,
+    ContactInfoComponent
   ],
   imports: [
     BrowserModule,
