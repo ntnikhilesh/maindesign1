@@ -2,10 +2,10 @@
 
  import {Routes, RouterModule} from '@angular/router';
 
- import {HelpComponent} from './help/help.component';
+ 
 
  import {MainTabDetailComponent} from './main-tab-detail/main-tab-detail.component';
- import {HomePageComponent} from './home-page/home-page.component';
+ 
  import {DashboardComponent} from './dashboard/dashboard.component';
  import {BillingComponentComponent} from './billing-component/billing-component.component';
  import {LoginComponent} from './login/login.component';
@@ -21,9 +21,9 @@ const routes:Routes=[
 
 {path:'',redirectTo:'/login',pathMatch:'full'},
 {path:'login',component:LoginComponent},
-{path:'help',component:HelpComponent},
+
 {path:'mainTab',component:MainTabDetailComponent},
-{path:'home-page',component:HomePageComponent},
+
 {path:'billing',component:BillingComponentComponent},
 {path:'inventory',component:InventoryComponent},
 {path:'report',component:ReportComponent},

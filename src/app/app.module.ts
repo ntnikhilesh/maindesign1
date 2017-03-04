@@ -9,12 +9,12 @@ import { BillDetailComponent } from './bill-detail/bill-detail.component';
 
 import {WegService} from './services/weg.service';
 //import { WegComponent } from './weg/weg.component';
-import { HelpComponent } from './help/help.component';
+
 
 import { MainTabDetailComponent } from './main-tab-detail/main-tab-detail.component';
 
 import {RoutingModule} from './routing.module';
-import { HomePageComponent } from './home-page/home-page.component';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 import { BillingComponentComponent } from './billing-component/billing-component.component';
@@ -42,10 +42,10 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     BillDetailComponent,
     //WegComponent,
-    HelpComponent,
+    
     
     MainTabDetailComponent,
-    HomePageComponent,
+    
     DashboardComponent,
     MenuDetailComponent,
     BillingComponentComponent,
