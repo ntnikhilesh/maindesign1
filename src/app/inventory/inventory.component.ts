@@ -4,6 +4,8 @@ import {MdDialog} from '@angular/material';
 import {CreateProductComponent} from './../create-product/create-product.component';
 
 
+
+
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',

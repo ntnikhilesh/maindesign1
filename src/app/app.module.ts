@@ -73,7 +73,7 @@ import { ContactComponent } from './contact/contact.component';
     HttpModule,
     MaterialModule,
     RoutingModule,
-    ExpandableListModule
+    ExpandableListModule,
   ],
   providers: [WegService],
   entryComponents: [CreateProductComponent,EditProductComponent,OrganiseCategoryComponent],
