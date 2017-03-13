@@ -48,6 +48,7 @@ import { AngularFireOfflineModule } from 'angularfire2-offline';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { ObillingComponentComponent } from './obilling-component/obilling-component.component';
 import { OmainTabDetailComponent } from './omain-tab-detail/omain-tab-detail.component';
+import { AddItemDemoComponent } from './add-item-demo/add-item-demo.component';
 
 
 const firebaseAuthConfig = {
@@ -96,7 +97,8 @@ export const firebaseConfig = {
     DeviceStatusComponent,
     ContactComponent,
     ObillingComponentComponent,
-    OmainTabDetailComponent
+    OmainTabDetailComponent,
+    AddItemDemoComponent
   ],
   imports: [
     BrowserModule,

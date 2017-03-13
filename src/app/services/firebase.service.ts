@@ -177,13 +177,5 @@ interface Listing
 	city?:string;
 	owner?:string;
 	bedrooms?:string;
-
-	name?:string;
-	printname?:string;
-	category?:string;
-	unit?:string;
-	price?:string;
-	rimage?:string;
-	rinitials?:string;
-
+	
 }
