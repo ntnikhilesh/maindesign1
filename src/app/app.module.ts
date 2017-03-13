@@ -1,3 +1,5 @@
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -37,6 +39,27 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { DeviceStatusComponent } from './device-status/device-status.component';
 import { ContactComponent } from './contact/contact.component';
 
+//Auth
+
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+
+
+const firebaseAuthConfig = {
+  provider: AuthProviders.Google,
+  method: AuthMethods.Popup       //we can use Redirect as well
+};
+
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyC990yhWFcPv2k2QUxLgAxNXcYgfOpgbck",
+    authDomain: "td-demo-df34d.firebaseapp.com",
+    databaseURL: "https://td-demo-df34d.firebaseio.com",
+    storageBucket: "td-demo-df34d.appspot.com",
+    messagingSenderId: "300613950722"
+};
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +92,7 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(firebaseConfig,firebaseAuthConfig),
     FormsModule,
     HttpModule,
     MaterialModule,

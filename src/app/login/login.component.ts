@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import {AngularFire} from 'angularfire2';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+    constructor(public af:AngularFire) { }
 
   ngOnInit() {
   }
+
+login()
+{
+        this.af.auth.login();
+}
+
+logout()
+{
+        this.af.auth.logout();
+        console.log('Logout succ..');
+}
 
 }

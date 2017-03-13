@@ -45,6 +45,16 @@
                 
               </td>
             </tr>
+            <tr>
+              <td>
+                 <ul > 
+            <li *ngIf="!(af.auth | async)" ><a (click)="login()" routerLink="/billing" routerLinkActive="active">Login</a></li>
+             <li *ngIf="(af.auth | async)"><a (click)="logout()" routerLink="/login" routerLinkActive="active">Logout</a></li>
+            
+           
+          </ul>
+              </td>
+            </tr>
           </table>
         </form>
         

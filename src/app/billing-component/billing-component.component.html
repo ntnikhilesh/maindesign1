@@ -47,6 +47,14 @@
 
                 <a routerLink="/support" routerLinkActive="active"><img src="http://i.imgur.com/rU0cWZz.png" width="30px" alt="Support" align="center">
                 Support </a>
+
+                <br>
+                <ul > 
+            
+             <li *ngIf="(af.auth | async)"><a (click)="logout()" routerLink="/login" routerLinkActive="active">Logout</a></li>
+            
+           
+          </ul>
             </div>
 
 
