@@ -14,14 +14,16 @@ import * as firebase from 'firebase';
 })
 export class AddItemDemoComponent implements OnInit {
 
-   bedrooms:any;
-city:any;
+   //price:any;
+printname:any;
 image:any;
-owner:any;
+
 path:any;
 price:any;
-title:any;
-type:any;
+name:any;
+category:any;
+unit:any;
+
 
 
   constructor(
@@ -46,12 +48,13 @@ private router:Router
   		let listing=
   		{
 
-  			title:this.title,
-  			city:this.city,
-  			owner:this.owner,
-  			bedrooms:this.bedrooms,
+  			name:this.name,
+  			printname:this.printname,
+  			
+  			//price:this.price,
   			price:this.price,
-  			type:this.type
+  			category:this.category,
+  			unit:this.unit
   		}
   		
   		console.log(listing);

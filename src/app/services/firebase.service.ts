@@ -171,11 +171,12 @@ export class FirebaseService
 interface Listing
 {
 	$key?:string;
-	title?:string;
-	type?:string;
+	name?:string;
+	category?:string;
+	unit?:string;
 	image?:string;
-	city?:string;
-	owner?:string;
-	bedrooms?:string;
+	printname?:string;
 	
+	price?:string;
+
 }
