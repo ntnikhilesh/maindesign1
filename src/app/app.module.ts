@@ -39,9 +39,15 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { DeviceStatusComponent } from './device-status/device-status.component';
 import { ContactComponent } from './contact/contact.component';
 
+import {FirebaseService} from './services/firebase.service';
+
+import { AngularFireOfflineModule } from 'angularfire2-offline';
+
 //Auth
 
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+import { ObillingComponentComponent } from './obilling-component/obilling-component.component';
+import { OmainTabDetailComponent } from './omain-tab-detail/omain-tab-detail.component';
 
 
 const firebaseAuthConfig = {
@@ -88,7 +94,9 @@ export const firebaseConfig = {
     StoreInfoComponent,
     ContactInfoComponent,
     DeviceStatusComponent,
-    ContactComponent
+    ContactComponent,
+    ObillingComponentComponent,
+    OmainTabDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -97,9 +105,10 @@ export const firebaseConfig = {
     HttpModule,
     MaterialModule,
     RoutingModule,
+    AngularFireOfflineModule,
     ExpandableListModule,
   ],
-  providers: [WegService],
+  providers: [WegService,FirebaseService],
   entryComponents: [CreateProductComponent,EditProductComponent,OrganiseCategoryComponent],
   bootstrap: [AppComponent]
 })
