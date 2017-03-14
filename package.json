@@ -4,15 +4,15 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-  "start": "ng serve",
-  "lint": "tslint \"src/**/*.ts\"",
-  "test": "ng test",
-  "pree2e": "webdriver-manager update",
-  "e2e": "protractor",
-  "sw": "sw-precache --root=dist --config=sw-precache-config.js",
-  "build:prod": "ng build --prod && npm run sw",
-  "static-serve": "cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html"
-},
+    "start": "ng serve",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor",
+    "sw": "sw-precache --root=dist --config=sw-precache-config.js",
+    "build:prod": "ng build --prod && npm run sw",
+    "static-serve": "cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "^2.4.0",
