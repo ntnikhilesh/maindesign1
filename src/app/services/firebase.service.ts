@@ -34,6 +34,7 @@ export class FirebaseService
     getafoListings()
     {
        this.olistings=this.afo.database.list('/listings') as AfoListObservable<Listing[]>
+       console.log('data '+this.olistings);
         return this.olistings
 
     }
@@ -149,6 +150,7 @@ export class FirebaseService
         {
            listing.image=selectedFile.name;
            listing.path=path;
+           listing.imgaeUrl='url';
            console.log('offline adding');
            return this.olistings.push(listing);
 
@@ -178,5 +180,6 @@ interface Listing
 	printname?:string;
 	
 	price?:string;
+
 
 }

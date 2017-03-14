@@ -14,33 +14,72 @@ export class OmainTabDetailComponent implements OnInit {
 
   	
   	olistings:any;
+
+    listing:any;
   	imageUrl:any;
 
-  constructor(private firebaseService:FirebaseService) { }
+
+
+
+
+  constructor(private firebaseService:FirebaseService,
+  ) {
+    
+  }
 
   ngOnInit() {
   this.firebaseService.getafoListings().subscribe(listings=>{
   //console.log();
   
-  this.getImage();
+
   this.olistings=listings;
-  //console.log(key);
+
+
+  //Get image
+
+
+  for (let listing of this.olistings) {
+    //console.log(listing.$key);
+
+    this.firebaseService.getoListingDetails(listing.$key).subscribe(listing=>
+    {
+      this.listing=listing;
+      
+
+      //console.log(listing);  
+
+      
+      let storageRef=firebase.storage().ref();
+      let spaceRef=storageRef.child(this.listing.path);
+
+      storageRef.child(this.listing.path).getDownloadURL().then((url)=>
+      {
+        //console.log(url);
+        this.imageUrl=url;
+        //console.log(this.imageUrl[i]);
+     
+      
+      }).catch((error)=>
+      {
+        console.log(error);
+      });
+
+    });
+     
+}
+ 
+
+
+// End get image
+
   }); 
 
 
-  //get image URL
-
-
-
-  }
-
-
-  getImage()
-  {
-  console.log('your image path');
-
-
+  
 
 
   }
+
+
+  
 }
