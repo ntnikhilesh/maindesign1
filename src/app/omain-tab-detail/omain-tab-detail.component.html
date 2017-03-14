@@ -11,7 +11,7 @@
          
 					<md-card class="mcard" *ngFor="let listing of olistings" >
            
-            <img md-card-avatar src='http://i.imgur.com/qQlNx4d.jpg' alt='Avarekayi' width="100%">
+            <img md-card-avatar src='{{listing.imageUrl}}' alt='{{listing.printname}}' width="100%">
             <md-chip-list>
   
                 <md-chip color="accent" selected=""> {{listing.printname}} 

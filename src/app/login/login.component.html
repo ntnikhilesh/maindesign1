@@ -40,16 +40,20 @@
             </tr>
             <tr>
               <td align="center ">
+                 <li *ngIf="!(af.auth | async)" ><a (click)="login()" md-raised-button color="" routerLink="/billing" routerLinkActive="active">Login</a></li>
 
-                <a md-raised-button color="" routerLink="/billing" routerLinkActive="active">LOGIN</a>
+                 <li *ngIf="(af.auth | async)" ><a md-raised-button color="" routerLink="/billing" routerLinkActive="active">Already Login...Go to Biiling Page......</a></li><br><br>
+
+                 <li *ngIf="(af.auth | async)"><a md-raised-button color="" (click)="logout()" routerLink="/login" routerLinkActive="active">Logout</a></li> 
+                <!--<a md-raised-button color="" routerLink="/billing" routerLinkActive="active">LOGIN</a>-->
                 
               </td>
             </tr>
             <tr>
               <td>
                  <ul > 
-            <li *ngIf="!(af.auth | async)" ><a (click)="login()" routerLink="/billing" routerLinkActive="active">Login</a></li>
-             <li *ngIf="(af.auth | async)"><a (click)="logout()" routerLink="/login" routerLinkActive="active">Logout</a></li>
+            <!--<li *ngIf="!(af.auth | async)" ><a (click)="login()" routerLink="/billing" routerLinkActive="active">Login</a></li>
+             <li *ngIf="(af.auth | async)"><a (click)="logout()" routerLink="/login" routerLinkActive="active">Logout</a></li> -->
             
            
           </ul>

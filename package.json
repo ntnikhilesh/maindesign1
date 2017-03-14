@@ -4,12 +4,15 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+  "start": "ng serve",
+  "lint": "tslint \"src/**/*.ts\"",
+  "test": "ng test",
+  "pree2e": "webdriver-manager update",
+  "e2e": "protractor",
+  "sw": "sw-precache --root=dist --config=sw-precache-config.js",
+  "build:prod": "ng build --prod && npm run sw",
+  "static-serve": "cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html"
+},
   "private": true,
   "dependencies": {
     "@angular/common": "^2.4.0",
@@ -41,10 +44,12 @@
     "karma": "~1.4.1",
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "live-server": "^1.2.0",
     "protractor": "~5.1.0",
+    "sw-precache": "^5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.4.2",
     "typescript": "~2.0.0"

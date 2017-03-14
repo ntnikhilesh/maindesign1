@@ -74,6 +74,13 @@ export class FirebaseService
       itemObservable.update({ owner: 'CC' });
     }
 
+    updateOffImageURL(id,url)
+    {
+      console.log(id+"and "+url);
+      const itemObservable = this.af.database.object('/listings/'+id);
+      itemObservable.update({ imageUrl: url });
+    }
+
     deleteListing(id)
     {
       console.log(id);
@@ -149,6 +156,7 @@ export class FirebaseService
         {
            listing.image=selectedFile.name;
            listing.path=path;
+           listing.imageUrl='CC';
            console.log('offline adding');
            return this.olistings.push(listing);
 
