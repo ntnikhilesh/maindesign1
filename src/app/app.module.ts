@@ -50,6 +50,10 @@ import { ObillingComponentComponent } from './obilling-component/obilling-compon
 import { OmainTabDetailComponent } from './omain-tab-detail/omain-tab-detail.component';
 import { AddItemDemoComponent } from './add-item-demo/add-item-demo.component';
 
+//Local storage
+
+import { LocalStorageModule } from 'angular-2-local-storage';
+import { RegComponent } from './reg/reg.component';
 
 const firebaseAuthConfig = {
   provider: AuthProviders.Google,
@@ -98,7 +102,8 @@ export const firebaseConfig = {
     ContactComponent,
     ObillingComponentComponent,
     OmainTabDetailComponent,
-    AddItemDemoComponent
+    AddItemDemoComponent,
+    RegComponent
   ],
   imports: [
     BrowserModule,
@@ -109,6 +114,10 @@ export const firebaseConfig = {
     RoutingModule,
     AngularFireOfflineModule,
     ExpandableListModule,
+    LocalStorageModule.withConfig({
+            prefix: 'my-app',
+            storageType: 'localStorage'
+        })
   ],
   providers: [WegService,FirebaseService],
   entryComponents: [CreateProductComponent,EditProductComponent,OrganiseCategoryComponent],

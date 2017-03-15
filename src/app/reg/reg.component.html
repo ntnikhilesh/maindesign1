@@ -14,7 +14,7 @@
    <div class="login-page">
       <div class="login-logo" align="center">
         <img src="http://i.imgur.com/wBy57Le.jpg" width="100px" >
-        <br>Login Page
+        <br>Registration Page
       </div>
 
       
@@ -39,19 +39,20 @@
             <tr>
               <td align="center ">
 
-                 <a (click)="loginFB()" md-raised-button color="" >Login</a>
+                 <a  routerLink="/login" routerLinkActive="active" md-raised-button color="" >Login</a>
                  <br><br><br>
 
-                <a md-raised-button color="" routerLink="/register" routerLinkActive="active">Register Now!</a>
+                <a  md-raised-button color="" routerLink="/register" routerLinkActive="active">Register</a>
 
-                
+                 
+               
                 
               </td>
             </tr>
             <tr>
               <td>
                  <ul > 
-           
+            
             
            
           </ul>
@@ -77,7 +78,6 @@
    </div>
 
           
-
 </div>
 
 <div class="col-3 col-m-3">
@@ -86,8 +86,9 @@
 
 </div>
 
-
 -->
+
+
 
 
 
@@ -97,18 +98,21 @@
   {{error}}
 </div>
 <div class="modal-dialog">
-  <div class="loginmodal-container">
-    <h1>Login to Your Account</h1><br>
-    <form class="form-signin" (submit)="loginWithEmail($event, email.value, password.value)">
+  <div class="registermodal-container">
+    <h1>Register</h1><br>
+    <form class="form-signin" (submit)="register($event, name.value, email.value, password.value)">
+      <label for="name" class="sr-only">Name</label>
+      <input #name type="text" id="name" class="form-control" placeholder="Name" required="">
       <label for="email" class="sr-only">Email address</label>
-      <input #email type="email" id="email" class="form-control" placeholder="Email address">
-      <label for="password" class="sr-only">Password</label>
-      <input #password type="password" id="password" class="form-control" placeholder="Password" required="">
+      <input #email type="email" id="email" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input #password type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
       <br>
-      <button class="btn btn-md btn-primary btn-block" type="submit">Sign in</button>
+      <button  class="btn btn-md btn-primary btn-block" type="submit">Register</button>
     </form>
-    
-    <a [routerLink]="['/register']" style="cursor: pointer;">Register Now</a>
   </div>
 </div>
+
+
+
 

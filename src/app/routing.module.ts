@@ -13,6 +13,7 @@
  import {ReportComponent} from './report/report.component';
  import {SettingComponent} from './setting/setting.component';
  import {SupportComponent} from './support/support.component';
+ import {RegComponent} from './reg/reg.component';
 
 
 
@@ -25,6 +26,7 @@ const routes:Routes=[
 {path:'mainTab',component:MainTabDetailComponent},
 
 {path:'billing',component:BillingComponentComponent},
+{path:'register',component:RegComponent},
 {path:'inventory',component:InventoryComponent},
 {path:'report',component:ReportComponent},
 {path:'settings',component:SettingComponent},

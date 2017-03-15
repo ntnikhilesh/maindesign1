@@ -5,6 +5,8 @@ import {FirebaseService} from './../services/firebase.service';
 
 import * as firebase from 'firebase';
 
+import { LocalStorageService } from 'angular-2-local-storage';
+
 @Component({
   selector: 'app-omain-tab-detail',
   templateUrl: './omain-tab-detail.component.html',
@@ -18,10 +20,22 @@ export class OmainTabDetailComponent implements OnInit {
     listing:any;
   	imageUrl:any;
 
-  constructor(private firebaseService:FirebaseService) { }
+
+  constructor(private firebaseService:FirebaseService,private localStorageService: LocalStorageService) { }
 
   ngOnInit() 
   {
+
+    this.checkInternet();
+
+    
+    
+    //this.submit('key1', 'val1');
+    //this.getItem('key1'); 
+      
+
+
+
       this.firebaseService.getafoListings().subscribe(listings=>{
       //console.log();
   
@@ -54,7 +68,9 @@ export class OmainTabDetailComponent implements OnInit {
               this.imageUrl=url;
               //console.log(this.imageUrl);
 
+              this.submit(listing.$key,url);
               this.firebaseService.updateOffImageURL(listing.$key,url);  
+              this.getItem(listing.$key); 
       
             }).catch((error)=>
             {
@@ -79,4 +95,20 @@ export class OmainTabDetailComponent implements OnInit {
   }
 
 
-}
+      submit(key, val) 
+      {
+          return this.localStorageService.set(key, val);
+      }
+
+      getItem(key) 
+      {
+          //console.log(this.localStorageService.get(key));
+          return this.localStorageService.get(key);
+      }
+
+      checkInternet()
+      {
+          console.log(navigator.onLine);
+
+        }
+      }
